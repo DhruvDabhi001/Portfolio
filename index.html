@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhruv Dabhi - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <style>
+    html {
+      scroll-padding-top: 5.2rem;
+      /* Adjust this based on header height */
+    }
+
+    .gradient-bg {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+
+    .skill-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-card {
+      transition: all 0.3s ease;
+      background: linear-gradient(145deg, #ffffff);
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 20px rgba(0, 0, 0, 0.15);
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-100 text-gray-800 font-sans">
+  <!-- Header -->
+  <header class="bg-white backdrop-blur-md shadow-lg sticky top-0 z-50">
+    <div class="max-w-1xl mx-auto px-4 py-6 flex justify-between items-center">
+      <h1 class="text-3xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+        Dhruv Dabhi
+      </h1>
+      <nav class="space-x-6">
+        <a href="#hero" class="text-gray-700 hover:text-purple-600 transition-colors font-medium">Home</a>
+        <a href="#about" class="text-gray-700 hover:text-purple-600 transition-colors font-medium">About</a>
+        <a href="#projects" class="text-gray-700 hover:text-purple-600 transition-colors font-medium">Projects</a>
+        <a href="#contact" class="text-gray-700 hover:text-purple-600 transition-colors font-medium">Contact</a>
+        <a href="./dhruv.pdf" target="_blank"
+          class="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-6 py-2 rounded-full hover:from-purple-700 hover:to-blue-700 transition-all transform hover:scale-105 shadow-lg">
+          Resume
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="text-center py-5 gradient-bg text-white relative overflow-hidden">
+    <div class="absolute inset-0 bg-black/10"></div>
+    <div class="relative z-10">
+
+      <h2 class="text-6xl font-bold mb-6 leading-tight">
+        Hi, I'm <span class="text-yellow-300">Dhruv</span> 👋
+      </h2>
+
+      <p class="text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
+        A passionate <span class="font-semibold text-yellow-200">MERN Stack Developer</span> |
+        Building <span class="font-semibold text-green-300">AlphaMony</span>
+      </p>
+      <div class="flex justify-center space-x-4">
+        <div class="bg-white/20 backdrop-blur-sm rounded-full px-4 py-2">
+          <span class="font-medium">🚀 Full Stack</span>
+        </div>
+        <div class="bg-white/20 backdrop-blur-sm rounded-full px-4 py-2">
+          <span class="font-medium">💡 Creative</span>
+        </div>
+        <div class="bg-white/20 backdrop-blur-sm rounded-full px-4 py-2">
+          <span class="font-medium">⚡ Fast Learner</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="max-w-6xl mx-auto px-13 pt-12">
+    <div class="text-center mb-12">
+      <h3
+        class="text-4xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent mb-4 leading-relaxed">
+        About Me
+      </h3>
+    </div>
+
+    <div class="bg-gray-200 backdrop-blur-sm rounded-2xl p-8  mb-12">
+      <p class="text-gray-700 leading-relaxed text-lg text-center max-w-4xl mx-auto">
+        I'm a self-driven web developer focused on building clean, responsive, and scalable web applications.
+        Currently working on <span class="font-bold text-purple-600">AlphaMony</span>, a virtual stock trading platform
+        built with the MERN stack.
+        I believe in creating digital experiences that not only look great but also solve real-world problems.
+      </p>
+    </div>
+
+    <div class="mb-8">
+      <h4 class="text-2xl font-bold text-center mb-8 text-gray-800">My Tech Arsenal 🛠️</h4>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+        <!-- Frontend Skills -->
+        <div
+          class="skill-card bg-gradient-to-br from-purple-500 to-purple-700 text-white rounded-xl p-4 text-center shadow-lg">
+          <div class="text-2xl mb-2">🎨</div>
+          <span class="font-semibold">HTML5</span>
+        </div>
+        <div
+          class="skill-card bg-gradient-to-br from-blue-400 to-blue-600 text-white rounded-xl p-4 text-center shadow-lg">
+          <div class="text-2xl mb-2">💨</div>
+          <span class="font-semibold">Tailwind CSS</span>
+        </div>
+        <div
+          class="skill-card bg-gradient-to-br from-yellow-300 to-yellow-500 text-white rounded-xl p-4 text-center shadow-lg">
+          <div class="text-2xl mb-2">⚡</div>
+          <span class="font-semibold">JavaScript</span>
+        </div>
+        <div
+          class="skill-card bg-gradient-to-br from-gray-600 to-gray-800 text-white rounded-xl p-4 text-center shadow-lg">
+          <div class="text-2xl mb-2">⚛️</div>
+          <span class="font-semibold">React</span>
+        </div>
+
+        <!-- Backend Skills -->
+        <div
+          class="skill-card bg-gradient-to-br from-green-400 to-green-600 text-white rounded-xl p-4 text-center shadow-lg">
+          <div class="text-2xl mb-2">🚀</div>
+          <span class="font-semibold">Node.js</span>
+        </div>
+        <div
+          class="skill-card bg-gradient-to-br from-gray-600 to-gray-800 text-white rounded-xl p-4 text-center shadow-lg">
+          <div class="text-2xl mb-2">🏃‍♂️</div>
+          <span class="font-semibold">Express.js</span>
+        </div>
+        <div
+          class="skill-card bg-gradient-to-br from-green-500 to-green-700 text-white rounded-xl p-4 text-center shadow-lg">
+          <div class="text-2xl mb-2">🍃</div>
+          <span class="font-semibold">MongoDB</span>
+        </div>
+        <div
+          class="skill-card bg-gradient-to-br from-purple-500 to-purple-700 text-white rounded-xl p-4 text-center shadow-lg">
+          <div class="text-2xl mb-2">🔧</div>
+          <span class="font-semibold">Git & GitHub</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="px-12 pt-12">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-10">
+        <h3
+          class="text-4xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent mb-5 leading-relaxed">
+          Featured Projects
+        </h3>
+        <div class="w-24 h-1 bg-gradient-to-r from-purple-600 to-blue-600 mx-auto rounded-full"></div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Ojas Project -->
+        <div class="project-card rounded-2xl p-8  border border-gray-100 ">
+          <div class="flex items-center mb-4">
+            <div
+              class="w-12 h-12 bg-gradient-to-r from-green-400 to-blue-500 rounded-full flex items-center justify-center text-white text-xl font-bold mr-4">
+              💼
+            </div>
+            <h4 class="text-2xl font-bold text-gray-800">Ojas</h4>
+          </div>
+          <p class="text-gray-600 mb-6 leading-relaxed">
+           Ojas is a feature-rich job portal platform built with the MERN stack, enabling seamless job listings and real-time job applications.
+           It is designed to connect job seekers with the companies that need them.
+          </p>
+
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">React</span>
+            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Node.js</span>
+            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">MongoDB</span>
+          </div>
+          <div class="flex space-x-4">
+            <a href="https://ojas-frontend.onrender.com" target="_blank"
+              class="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-6 py-2 rounded-full hover:from-purple-700 hover:to-blue-700 transition-all transform hover:scale-105 font-medium">
+              Live Demo 🚀
+            </a>
+            <a href="https://github.com/DhruvDabhi001/OJAS" target="_blank"
+              class="border-2 border-gray-300 text-gray-700 px-6 py-2 rounded-full hover:border-purple-600 hover:text-purple-600 transition-all font-medium">
+              GitHub 📂
+            </a>
+          </div>
+        </div>
+
+        <!-- Portfolio Project -->
+        <div class="project-card rounded-2xl p-8  border border-gray-100">
+          <div class="flex items-center mb-4">
+            <div
+              class="w-12 h-12 bg-gradient-to-r from-pink-400 to-purple-500 rounded-full flex items-center justify-center text-white text-xl font-bold mr-4">
+              🎨
+            </div>
+            <h4 class="text-2xl font-bold text-gray-800">My Portfolio</h4>
+          </div>
+          <p class="text-gray-600 mb-6 leading-relaxed">
+            This stunning responsive portfolio website built with HTML and Tailwind CSS, featuring modern design
+            principles and smooth animations.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">HTML5</span>
+            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Tailwind CSS</span>
+            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Responsive</span>
+          </div>
+          <div class="flex space-x-4">
+            <a href="#"
+              class="bg-gradient-to-r from-pink-600 to-purple-600 text-white px-6 py-2 rounded-full hover:from-pink-700 hover:to-purple-700 transition-all transform hover:scale-105 font-medium">
+              Live View ✨
+            </a>
+            <a href="https://github.com/DhruvDabhi001/Portfolio" target="_blank"
+              class="border-2 border-gray-300 text-gray-700 px-6 py-2 rounded-full hover:border-pink-600 hover:text-pink-600 transition-all font-medium">
+              GitHub 📂
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="max-w-6xl mx-auto px-12 py-12">
+    <div class="text-center mb-12">
+      <h3
+        class="text-4xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent mb-4 leading-relaxed">
+        Let's Connect
+      </h3>
+      <div class="w-24 h-1 bg-gradient-to-r from-purple-600 to-blue-600 mx-auto rounded-full"></div>
+    </div>
+
+    <div class="bg-gray-300 rounded-2xl p-8 text-center">
+      <p class="text-gray-700 mb-8 text-xl">
+        Feel free to reach out for collaborations, opportunities, or just a friendly chat about tech!
+      </p>
+      <div class="grid sm:grid-cols-3 gap-6">
+        <a href="mailto:dabhidhruv73@gmail.com"
+          class="bg-gradient-to-br from-red-400 to-red-600 text-white p-6 rounded-xl hover:from-red-500 hover:to-red-700 transition-all transform hover:scale-105 shadow-lg">
+          <div class="text-3xl mb-2">📧</div>
+          <div class="font-semibold">Email</div>
+          <div class="text-sm opacity-90">dabhidhruv73@gmail.com</div>
+        </a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank"
+          class="bg-gradient-to-br from-blue-500 to-blue-700 text-white p-6 rounded-xl hover:from-blue-600 hover:to-blue-800 transition-all transform hover:scale-105 shadow-lg">
+          <div class="text-3xl mb-2">💼</div>
+          <div class="font-semibold">LinkedIn</div>
+          <div class="text-sm opacity-90">Professional Network</div>
+        </a>
+        <a href="https://github.com/DhruvDabhi001" target="_blank"
+          class="bg-gradient-to-br from-gray-700 to-gray-900 text-white p-6 rounded-xl hover:from-gray-800 hover:to-black transition-all transform hover:scale-105 shadow-lg">
+          <div class="text-3xl mb-2">💻</div>
+          <div class="font-semibold">GitHub</div>
+          <div class="text-sm opacity-90">Code Repository</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-8 bg-gradient-to-r from-purple-600 to-blue-600 text-white">
+    <div class="flex justify-center items-center space-x-2 mb-2">
+      <span class="text-2xl">✨</span>
+      <span class="font-medium">Made with passion by Dhruv Dabhi</span>
+      <span class="text-2xl">✨</span>
+    </div>
+    <p class="text-purple-100">&copy; 2025 All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
